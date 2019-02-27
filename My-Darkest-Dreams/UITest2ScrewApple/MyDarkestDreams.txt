@@ -1,0 +1,129 @@
+false* ... *2*graybackground.png
+false* ... ...*3*graybackground.png
+false* ... ... ...*4*graybackground.png
+false* Where am I?*5*graybackground.png
+false* The last thing I remember was … never mind. I need to find out where I am, but all I can see is gray*6*graybackground.png
+false* Me: “Hello?”*7*graybackground.png
+false* ... *8*graybackground.png
+false* Me: “Can anybody hear me?”*9*graybackground.png
+false* ... *10*graybackground.png
+false* ... ... *11*graybackground.png
+false* ... ... ...*12*graybackground.png
+false* Me: “Anyone?”*13*graybackground.png
+false* ...*14*graybackground.png
+false* Me: “HELLO!! IS THERE ANYBODY??!”*15*graybackground.png
+false* ... *16*graybackground.png
+false* “keep it down,” a voice moans in the distance. I turn to find its origin.*17*graybackground.png
+true* I see a small child on a swing. She looks … familiar.* “who are you?”*2*1*19* “where am I?”*0*1*20* “Do I know you?”*1*1*21* "Hello again"*0*1*22*girlswing.png
+
+false* Girl: “Don’t remember me? That’s … surprising”*24*girlswingbrowfurrow.png
+false* Girl: “You are right where you want to be”*31*girlswing.png
+false* Girl: "You thought you did at one time"*38*girlswing.png
+false* Girl: "... Hello"*45*girlswing.png
+
+true* Surprising huh. I frowned. It sounded condescending, although She did seem genuinely upset that I didn't know her* "Condescending much?"*2*5*26* "Well, you do look familiar..."*0*1*27* "I'm a surprising guy."*2*1*28* ...*1*1*29*girlswingbrowfurrow.png
+
+false* Girl: "Well, it takes one to know one, and I highly doubt there is anybody as arrogant as you are."*52*girlswingbrowfurrow.png
+false* Girl: "It will come to you. You just need to let it" Remember... For some reason, I really didn't want to think about it.*52*girlswing.png
+false* Girl: "Just as surprising as your failure was?" Somewhere deep down that struck a nerve. I wasn't sure why.*52*girlswingbrowfurrow.png
+false* Girl: "..." ... What was I suppose to say? She had a pained look in her eye that I wasn't sure what to do about. Healing a broken body was one thing, but the mind?*52*girlswingsad.png
+
+true* Did I really want to be here? I don't even know where here is.* "I picked this place?"*0*1*33* "Why so gray?"*1*1*34* "Why did I choose this place?"*1*5*35* "There is no way I'd want to be in a place like this."*2*5*36*girlswing.png
+
+false* Girl: "To an extent. You where forced to go somewhere, you just picked here"*52*girlswing.png
+false* Girl: "You once said that it is the perfect pigment for this place"*52*girlswing.png
+false* Girl: "Because you belong here" Me: "... What?"*52*girlswing.png
+false* Girl: "Believe what you wish but the fact of the matter is that you are here."*52*girlswingbrowfurrow.png
+
+true* ... What?* "I've never seen you before in my life"*2*1*40* "I'm sorry I can't seem to fully remember you."*1*1*41* "I was foolish."*0*1*42* "I don't know you now?"*2*1*43*girlswing.png
+
+false* Girl: "Is that so? Well then sorry to be a bother"*52*girlswingbrowfurrow.png
+false* Girl: " ... That's a shame"*52*girlswing.png
+false* She looked at me sorrowfully. Neither of us could find the words to say.*52*girlswingsad.png
+false* Girl: "No, you never understood... you lied to me."*52*girlswingbrowfurrow.png
+
+true* She stared at me somberly. Girl: "Why are you here?"* "I was hoping you could tell me."*2*1*47* "I don't know.*2*1*48* ...*0*1*49* "I'm not sure I want to know."*1*1*50*girlswing.png
+
+false* Girl: "That is something you must figure out for yourself."*52*girlswing.png
+false* Girl: "Like it or not you'll have to face the truth eventually"*52*girlswingbrowfurrow.png
+false* ...*52*girlswingsad.png
+false* Girl: "Then I suppose you won't be leaving anytime soon."*52*girlswing.png
+
+false* The girl sighed and, jumping off the swing, began to walk away. Me: "Where are you going?" Girl: "Only time will tell."*53*girlwalkaway.png
+false* The girl collapsed to the ground. In a panic I rushed toward her.*54*girlfallfar.png
+false* I checked for vital signs... There where none. I knew exactly what to do. I ... I remembered her, I couldn't suppress it anymore. No matter how hard I try, I can't run from what happened. Panic began to rise within me, filling my lungs. I couldn't breathe...*55*girlfallclose.png
+false* Everything faded...*57*graybackground.png
+---Next Chapter----
+false* ... *58*graybackground.png
+false* ... (breathing) ... *59*graybackground.png
+false* (heavier breathing) ...*60*graybackground.png
+false* I found myself sitting inside of an office. It looked at lot like Stevenson's office*61*emptyoffice.png
+false* Sure enough Stevenson stepped inside and sat down, grim faced. Of all the things I had to relive, why did it have to be this?*62*fulloffice.png
+true* Stevenson sighed deeply. Everything was silent for a time... Stevenson: "Dang it Peter how could you?"* "How could I not? She was dying!"*1*1*64* "I knew what I was doing."*2*1*65* "Well, you weren't going to help"*2*5*66* ...*0*5*67*fulloffice.png
+
+false* Stevenson: "It wasn't you're call, and you know it."*69*fulloffice.png
+false* Stevenson: "Then explain why she died."*76*fulloffice.png
+false* Stevenson: "I wasn't going to assist in malpractice murder"*83*fulloffice.png
+false* Stevenson sighed again. Stevenson: "You were one of the best. All the miracle work got you didn't it. I've told you time and time again. Something like this was bound to happen*90*fulloffice.png
+
+true* Me: "Your call would have left her to die." Stevenson: "And your call killed her quicker!"* "It could have worked."*2*1*71* "You killed her first by leaving her to die."*2*5*72* ...*1*5*73* ... "You're right."*0*5*74*fulloffice.png
+
+false* Stevenson: "Peter, it couldn't, and it didn't. You're were a good doctor, but you couldn't do the impossible."*97*fulloffice.png
+false* Stevenson was silent for awhile. *97*fulloffice.png
+false* Stevenson gritted his teeth. Stevenson: "Peter, you should have known better... You knew better."*97*fulloffice.png
+false* Stevenson: "I'm glad you see it now, now that its too late."*97*fulloffice.png
+
+true* ...* "I needed more time."*1*1*78* "Well had you not gotten in my way..."*2*5*79* "The procedure was started to late."*2*1*80* "I can't."*0*1*81*fulloffice.png
+
+false* Stevenson shook his head. "No, time has nothing to do with it."*97*fulloffice.png
+false* Stevenson raised his voice: "I not going to turn a blind eye to quackery!"*97*fulloffice.png
+false* Stevenson: "The procedure shouldn't have started at all."*97*fulloffice.png
+false* Stevenson: "Of course you can't. You can never do wrong in your own eyes."*97*fulloffice.png
+
+true* Me: "And leaving someone to die isn't!"* "Don't get high and mighty with me!"*2*5*85* "You are just as bad"*2*1*86* "I did better than you."*1*5*87* "You could have done better."*0*5*88*fulloffice.png
+
+false* Stevenson: "Peter, your horse was always the highest. Your flaws don't sit well with you."*97*fulloffice.png
+false* Stevenson: "Childishly placing blame won't fix things. You need to admit when you are wrong."*97*fulloffice.png
+false* Stevenson: "No, you didn't."*97*fulloffice.png
+false* Stevenson: "Peter, we did the best we could."*97*fulloffice.png
+
+true* His words hit close to home. I was the best of the best. It just wasn't fair.* "I'm still the best."*2*1*92* "Bound to happen to someone else."*2*5*93* "I should have listened."*0*5*94* "You've told off just about everybody."*1*5*95*fulloffice.png
+
+false* Stevenson shook his head. Stevenson: "Even after all this, you still haven't learned. Peter, a girl is dead. Dead because of you."*97*fulloffice.png
+false* Stevenson brow creased, which is as close to livid as Stevenson got. Stevenson: "I can't believe you were ever a doctor. Did you ever even care about your patients?"*97*fulloffice.png
+false* Stevenson: "Its a little bit late for that."*97*fulloffice.png
+false* Stevenson: "No, just the stubborn one who can't seem to understand what it means to be a doctor."*97*fulloffice.png
+
+false* I rose up suddenly furious. There was no way he could understand. Me: "I'm a far better doctor than you ever where. The procedure is sound. I could have saved her had I been given more time." It wasn't my fault, I needed more time. More time...*98*fulloffice.png
+false* I stormed out of the office, I didn't have time for this. I needed all the time I could get.*99*graybackground.png
+false* I could try and save her. If I can just get is right this time...*101*graybackground.png
+---End of free version (Next Chapter)----
+false* If you like the game so far be sure to download the full version on iTunes!*102*graybackground.png
+end* The ending you where leaning towards was...*112*graybackground.png
+
+false* The good ending!!*108*graybackground.png
+false* The okay ending :(*108*graybackground.png
+false* The bad ending XP*108*graybackground.png
+
+false* CREDITS:*109*graybackground.png
+false* Creators: Elijah Williams, Justin Thomas, Emily Heaton*110*graybackground.png
+false* Thanks for playing!!*1*graybackground.png
+
+false* The ending couldn't be calculated*1*graybackground.png
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Story to be implemented at a later:
+
+true* Save Her* YOU*index*weight*pointer* CAN'T*index*weight*pointer* SAVE*index*weight*pointer* HER*index*weight*pointer*image
+false* A new wave of disrepair washed over me. Washing away everything but my grief. For all my skills, a girl was dead. I'd killed her. In a moment of arrogance I had killed her.*pointer*image
+
+false* Chapter Four: Acceptance*
+false* Epilogue*
+
+
+
+
+
+
+
+

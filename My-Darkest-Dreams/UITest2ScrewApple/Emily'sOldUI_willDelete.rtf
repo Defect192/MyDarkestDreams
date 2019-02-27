@@ -1,0 +1,428 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red0\green116\blue0;\red255\green255\blue255;\red170\green13\blue145;
+\red0\green0\blue0;\red92\green38\blue153;\red63\green110\blue116;\red28\green0\blue207;\red196\green26\blue22;
+\red46\green13\blue110;\red38\green71\blue75;}
+{\*\expandedcolortbl;;\csgenericrgb\c0\c45600\c0;\csgray\c100000;\csgenericrgb\c66500\c5200\c56900;
+\csgenericrgb\c0\c0\c0;\csgenericrgb\c35900\c14900\c60100;\csgenericrgb\c24700\c43100\c45600;\csgenericrgb\c11000\c0\c81000;\csgenericrgb\c77000\c10200\c8600;
+\csgenericrgb\c18100\c5200\c43100;\csgenericrgb\c14900\c27800\c29400;}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\deftab543
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \cb3 //
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf2 //  ViewController.swift
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf2 //  FileScanner
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf2 //
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf2 //  Created by Emily Heaton on 2/9/18.
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf2 //  Copyright \'a9 2018 Emily Heaton. All rights reserved.
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf2 //
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf4 import\cf5  UIKit
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf4 class\cf5  ViewController: \cf6 UIViewController\cf5  \{
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf5     \cf4 let\cf5  FR = \cf7 FileReader\cf5 ()
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf4 var\cf5  pointer = \cf8 0\cf5 ;
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf4 var\cf5  data = \cf6 Array\cf5 <\cf6 String\cf5 >();
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf4 var\cf5  options = \cf9 "true"\cf5  \cf2 //We start with a big block of text (set to false)
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf4 let\cf5  endpointer = [\cf8 68\cf5 ,\cf8 69\cf5 ,\cf8 70\cf5 ,\cf8 71\cf5 ]
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf4 var\cf5  endtally = [\cf8 0\cf5 ,\cf8 0\cf5 ,\cf8 0\cf5 ,\cf8 0\cf5 ];
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf4 var\cf5  CalcEnd = \cf8 66
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf4 @IBOutlet\cf5  \cf4 var\cf5  Dialog: \cf6 UILabel\cf5 !
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf4 @IBOutlet\cf5  \cf4 weak\cf5  \cf4 var\cf5  ButtonOne: \cf6 UIButton\cf5 !
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf4 @IBOutlet\cf5  \cf4 weak\cf5  \cf4 var\cf5  ButtonTwo: \cf6 UIButton\cf5 !
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf4 @IBOutlet\cf5  \cf4 weak\cf5  \cf4 var\cf5  ButtonThree: \cf6 UIButton\cf5 !
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf4 @IBOutlet\cf5  \cf4 weak\cf5  \cf4 var\cf5  ButtonFour: \cf6 UIButton\cf5 !
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf4 @IBAction\cf5  \cf4 func\cf5  SetTextOne(\cf4 _\cf5  sender: \cf6 UIButton\cf5 ) \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \cf4 if\cf5  \cf7 options\cf5  == \cf9 "true"\cf5 \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             \cf7 pointer\cf5  = \cf6 Int\cf5 (\cf7 data\cf5 [\cf8 5\cf5 ])!-\cf8 1
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             \cf7 endtally\cf5 [\cf6 Int\cf5 (\cf7 data\cf5 [\cf8 3\cf5 ])!] += \cf6 Int\cf5 (\cf7 data\cf5 [\cf8 4\cf5 ])!
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \}\cf4 else\cf5  \cf4 if\cf5  \cf7 options\cf5  == \cf9 "false"\cf5 \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             \cf7 pointer\cf5  = \cf6 Int\cf5 (\cf7 data\cf5 [\cf8 2\cf5 ])!-\cf8 1
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \}\cf4 else\cf5  \cf4 if\cf5  \cf7 options\cf5  == \cf9 "end"\cf5 \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             \cf7 CalcEnd\cf5  = \cf7 endtally\cf5 .\cf10 index\cf5 (of: \cf7 endtally\cf5 .\cf10 max\cf5 ()!)! \cf2 //CalcEnd aka Calculated Ending
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             \cf7 pointer\cf5  = \cf7 endpointer\cf5 [\cf7 CalcEnd\cf5 ]-\cf8 1
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \cf11 updateUI\cf5 ()
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf4 @IBAction\cf5  \cf4 func\cf5  SetTextTwo(\cf4 _\cf5  sender: \cf6 UIButton\cf5 ) \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \cf4 if\cf5  \cf7 options\cf5  == \cf9 "true"\cf5 \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             \cf7 pointer\cf5  = \cf6 Int\cf5 (\cf7 data\cf5 [\cf8 9\cf5 ])!-\cf8 1
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             \cf7 endtally\cf5 [\cf6 Int\cf5 (\cf7 data\cf5 [\cf8 7\cf5 ])!] += \cf6 Int\cf5 (\cf7 data\cf5 [\cf8 8\cf5 ])!
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \}\cf4 else\cf5  \cf4 if\cf5  \cf7 options\cf5  == \cf9 "false"\cf5 \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             \cf7 pointer\cf5  = \cf6 Int\cf5 (\cf7 data\cf5 [\cf8 2\cf5 ])!-\cf8 1
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \}\cf4 else\cf5  \cf4 if\cf5  \cf7 options\cf5  == \cf9 "end"\cf5 \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             \cf7 CalcEnd\cf5  = \cf7 endtally\cf5 .\cf10 index\cf5 (of: \cf7 endtally\cf5 .\cf10 max\cf5 ()!)!
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             \cf7 pointer\cf5  = \cf7 endpointer\cf5 [\cf7 CalcEnd\cf5 ]-\cf8 1
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \cf11 updateUI\cf5 ()
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf4 @IBAction\cf5  \cf4 func\cf5  SetTextThree(\cf4 _\cf5  sender: \cf6 UIButton\cf5 ) \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \cf4 if\cf5  \cf7 options\cf5  == \cf9 "true"\cf5 \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             \cf7 pointer\cf5  = \cf6 Int\cf5 (\cf7 data\cf5 [\cf8 13\cf5 ])!-\cf8 1
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             \cf7 endtally\cf5 [\cf6 Int\cf5 (\cf7 data\cf5 [\cf8 11\cf5 ])!] += \cf6 Int\cf5 (\cf7 data\cf5 [\cf8 12\cf5 ])!
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \}\cf4 else\cf5  \cf4 if\cf5  \cf7 options\cf5  == \cf9 "false"\cf5 \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             \cf7 pointer\cf5  = \cf6 Int\cf5 (\cf7 data\cf5 [\cf8 2\cf5 ])!-\cf8 1
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \}\cf4 else\cf5  \cf4 if\cf5  \cf7 options\cf5  == \cf9 "end"\cf5 \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             \cf7 CalcEnd\cf5  = \cf7 endtally\cf5 .\cf10 index\cf5 (of: \cf7 endtally\cf5 .\cf10 max\cf5 ()!)!
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             \cf7 pointer\cf5  = \cf7 endpointer\cf5 [\cf7 CalcEnd\cf5 ]-\cf8 1
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \cf11 updateUI\cf5 ()
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf4 @IBAction\cf5  \cf4 func\cf5  SetTextFour(\cf4 _\cf5  sender: \cf6 UIButton\cf5 ) \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \cf4 if\cf5  \cf7 options\cf5  == \cf9 "true"\cf5 \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             \cf7 pointer\cf5  = \cf6 Int\cf5 (\cf7 data\cf5 [\cf8 17\cf5 ])!-\cf8 1
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             \cf7 endtally\cf5 [\cf6 Int\cf5 (\cf7 data\cf5 [\cf8 15\cf5 ])!] += \cf6 Int\cf5 (\cf7 data\cf5 [\cf8 16\cf5 ])!
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \}\cf4 else\cf5  \cf4 if\cf5  \cf7 options\cf5  == \cf9 "false"\cf5 \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             \cf7 pointer\cf5  = \cf6 Int\cf5 (\cf7 data\cf5 [\cf8 2\cf5 ])!-\cf8 1
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \}\cf4 else\cf5  \cf4 if\cf5  \cf7 options\cf5  == \cf9 "end"\cf5 \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             \cf7 CalcEnd\cf5  = \cf7 endtally\cf5 .\cf10 index\cf5 (of: \cf7 endtally\cf5 .\cf10 max\cf5 ()!)!
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             \cf7 pointer\cf5  = \cf7 endpointer\cf5 [\cf7 CalcEnd\cf5 ]-\cf8 1
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \cf11 updateUI\cf5 ()
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf4 func\cf5  TallyCheck()\{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \cf4 if\cf5  \cf7 pointer\cf5  == \cf8 0\cf5 \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             \cf7 endtally\cf5 [\cf8 0\cf5 ] = \cf8 0
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             \cf7 endtally\cf5 [\cf8 1\cf5 ] = \cf8 0
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             \cf7 endtally\cf5 [\cf8 2\cf5 ] = \cf8 0
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             \cf7 endtally\cf5 [\cf8 3\cf5 ] = \cf8 0
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf4 func\cf5  updateUI()\{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \cf7 data\cf5  = \cf7 FR\cf5 .\cf11 readDataFromFile\cf5 (lineNum: \cf7 pointer\cf5 );
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \cf7 options\cf5  = \cf7 data\cf5 [\cf8 0\cf5 ]
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \cf11 TallyCheck\cf5 ()
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \cf4 if\cf5  \cf7 options\cf5  == \cf9 "true"\cf5  || \cf7 options\cf5  == \cf9 "end"\cf5 \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             \cf7 Dialog\cf5 .\cf6 text\cf5  = \cf7 data\cf5 [\cf8 1\cf5 ]
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             \cf7 ButtonOne\cf5 .\cf10 setTitle\cf5 (\cf7 data\cf5 [\cf8 2\cf5 ], for: \cf6 UIControlState\cf5 .\cf6 normal\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             \cf7 ButtonTwo\cf5 .\cf10 setTitle\cf5 (\cf7 data\cf5 [\cf8 6\cf5 ], for: \cf6 UIControlState\cf5 .\cf6 normal\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             \cf7 ButtonThree\cf5 .\cf10 setTitle\cf5 (\cf7 data\cf5 [\cf8 10\cf5 ], for: \cf6 UIControlState\cf5 .\cf6 normal\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             \cf7 ButtonFour\cf5 .\cf10 setTitle\cf5 (\cf7 data\cf5 [\cf8 14\cf5 ], for: \cf6 UIControlState\cf5 .\cf6 normal\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \}\cf4 else\cf5  \cf4 if\cf5  \cf7 options\cf5  == \cf9 "false"\cf5 \{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             \cf7 Dialog\cf5 .\cf6 text\cf5  = \cf7 data\cf5 [\cf8 1\cf5 ]
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             \cf7 ButtonOne\cf5 .\cf10 setTitle\cf5 (\cf9 "blank"\cf5 , for: \cf6 UIControlState\cf5 .\cf6 normal\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             \cf7 ButtonTwo\cf5 .\cf10 setTitle\cf5 (\cf9 "blank"\cf5 , for: \cf6 UIControlState\cf5 .\cf6 normal\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             \cf7 ButtonThree\cf5 .\cf10 setTitle\cf5 (\cf9 "blank"\cf5 , for: \cf6 UIControlState\cf5 .\cf6 normal\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5             \cf7 ButtonFour\cf5 .\cf10 setTitle\cf5 (\cf9 "blank"\cf5 , for: \cf6 UIControlState\cf5 .\cf6 normal\cf5 )
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \}
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \cf4 override\cf5  \cf4 func\cf5  viewDidLoad()\{
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \cf4 super\cf5 .\cf10 viewDidLoad\cf5 ()
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5         \cf11 updateUI\cf5 ()
+\f1\fs24 \cf0 \
+
+\f0\fs22 \cf5     \}
+\f1\fs24 \cf0 \
+\
+
+\f0\fs22 \cf5 \}
+\f1\fs24 \cf0 \
+\
+}

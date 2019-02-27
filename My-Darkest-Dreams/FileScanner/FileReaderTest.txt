@@ -1,0 +1,105 @@
+true*This is the very first text*option 1*0*1*3*option 2*1*1*4*option 3*2*1*5*option 4*3*1*6
+
+true*This is option 1's text*option 1a*0*1*8*option 1b*1*1*9*option 1c*2*1*10*option 1d*3*1*11
+true*This is option 2's text*option 2a*0*1*13*option 2b*1*1*14*option 2c*2*1*15*option 2d*3*1*16
+true*This is option 3's text*option 3a*0*1*18*option 3b*1*1*19*option 3c*2*1*20*option 3d*3*1*21
+true*This is option 4's text*option 4a*0*1*23*option 4b*1*1*24*option 4c*2*1*25*option 4d*3*1*26
+
+true*This is option 1a's text*option 1aa*0*1*28*option 1ab*1*1*28*option 1ac*2*1*28*option 1ad*3*1*28
+true*This is option 1b's text*option 1ba*0*1*28*option 1bb*1*1*28*option 1bc*2*1*28*option 1bd*3*1*28
+true*This is option 1c's text*option 1ca*0*1*28*option 1cb*1*1*28*option 1cc*2*1*28*option 1cd*3*1*28
+true*This is option 1d's text*option 1da*0*1*28*option 1db*1*1*28*option 1dc*2*1*28*option 1dd*3*1*28
+
+true*This is option 2a's text*option 2aa*0*1*29*option 2ab*1*1*29*option 2ac*2*1*29*option 2ad*3*1*29
+true*This is option 2b's text*option 2ba*0*1*29*option 2bb*1*1*29*option 2bc*2*1*29*option 2bd*3*1*29
+true*This is option 2c's text*option 2ca*0*1*29*option 2cb*1*1*29*option 2cc*2*1*29*option 2cd*3*1*29
+true*This is option 2d's text*option 2da*0*1*29*option 2db*1*1*29*option 2dc*2*1*29*option 2dd*3*1*29
+
+true*This is option 3a's text*option 3aa*0*1*30*option 3ab*1*1*30*option 3ac*2*1*30*option 3ad*3*1*30
+true*This is option 3b's text*option 3ba*0*1*30*option 3bb*1*1*30*option 3bc*2*1*30*option 3bd*3*1*30
+true*This is option 3c's text*option 3ca*0*1*30*option 3cb*1*1*30*option 3cc*2*1*30*option 3cd*3*1*30
+true*This is option 3d's text*option 3da*0*1*30*option 3db*1*1*30*option 3dc*2*1*30*option 3dd*3*1*30
+
+true*This is option 4a's text*option 4aa*0*1*31*option 4ab*1*1*31*option 4ac*2*1*31*option 4ad*3*1*31
+true*This is option 4b's text*option 4ba*0*1*31*option 4bb*1*1*31*option 4bc*2*1*31*option 4bd*3*1*31
+true*This is option 4c's text*option 4ca*0*1*31*option 4cb*1*1*31*option 4cc*2*1*31*option 4cd*3*1*31
+true*This is option 4d's text*option 4da*0*1*31*option 4db*1*1*31*option 4dc*2*1*31*option 4dd*3*1*31
+
+false*This is a big block of text for Option 1*33
+false*This is a big block of text for Option 2*34
+false*This is a big block of text for Option 3*35
+false*This is a big block of text for Option 4*36
+
+false*This is the second block of text for Option 1*38
+false*This is the second block of text for Option 2*38
+false*This is the second block of text for Option 3*38
+false*This is the second block of text for Option 4*38
+
+true*Here is the next section of choices*option 1*0*1*40*option 2*1*1*41*option 3*2*1*42*option 4*3*1*43
+
+true*This is option 1's text for round 2*option 1a*0*1*45*option 1b*1*1*46*option 1c*2*1*47*option 1d*3*1*48
+true*This is option 2's text for round 2*option 2a*0*1*50*option 2b*1*1*51*option 2c*2*1*52*option 2d*3*1*53
+true*This is option 3's text for round 2*option 3a*0*1*55*option 3b*1*1*56*option 3c*2*1*57*option 3d*3*1*58
+true*This is option 4's text for round 2*option 4a*0*1*60*option 4b*1*1*61*option 4c*2*1*62*option 4d*3*1*63
+
+true*This is option 1a's text for round 2*option 1aa*0*1*65*option 1ab*1*1*65*option 1ac*2*1*65*option 1ad*3*1*65
+true*This is option 1b's text for round 2*option 1ba*0*1*65*option 1bb*1*1*65*option 1bc*2*1*65*option 1bd*3*1*65
+true*This is option 1c's text for round 2*option 1ca*0*1*65*option 1cb*1*1*65*option 1cc*2*1*65*option 1cd*3*1*65
+true*This is option 1d's text for round 2*option 1da*0*1*65*option 1db*1*1*65*option 1dc*2*1*65*option 1dd*3*1*65
+
+true*This is option 2a's text for round 2*option 2aa*0*1*65*option 2ab*1*1*65*option 2ac*2*1*65*option 2ad*3*1*65
+true*This is option 2b's text for round 2*option 2ba*0*1*65*option 2bb*1*1*65*option 2bc*2*1*65*option 2bd*3*1*65
+true*This is option 2c's text for round 2*option 2ca*0*1*65*option 2cb*1*1*65*option 2cc*2*1*65*option 2cd*3*1*65
+true*This is option 2d's text for round 2*option 2da*0*1*65*option 2db*1*1*65*option 2dc*2*1*65*option 2dd*3*1*65
+
+true*This is option 3a's text for round 2*option 3aa*0*1*65*option 3ab*1*1*65*option 3ac*2*1*65*option 3ad*3*1*65
+true*This is option 3b's text for round 2*option 3ba*0*1*65*option 3bb*1*1*65*option 3bc*2*1*65*option 3bd*3*1*65
+true*This is option 3c's text for round 2*option 3ca*0*1*65*option 3cb*1*1*65*option 3cc*2*1*65*option 3cd*3*1*65
+true*This is option 3d's text for round 2*option 3da*0*1*65*option 3db*1*1*65*option 3dc*2*1*65*option 3dd*3*1*65
+
+true*This is option 4a's text for round 2*option 4aa*0*1*65*option 4ab*1*1*65*option 4ac*2*1*65*option 4ad*3*1*65
+true*This is option 4b's text for round 2*option 4ba*0*1*65*option 4bb*1*1*65*option 4bc*2*1*65*option 4bd*3*1*65
+true*This is option 4c's text for round 2*option 4ca*0*1*65*option 4cb*1*1*65*option 4cc*2*1*65*option 4cd*3*1*65
+true*This is option 4d's text for round 2*option 4da*0*1*65*option 4db*1*1*65*option 4dc*2*1*65*option 4dd*3*1*65
+
+end*This is the final stretch, one final choice*make*0*1*66*your*1*1*66*final*2*1*66*choice*3*1*66
+false*something went wrong with calculating the ending :(*78
+
+false*THIS IS ENDING ONE*73
+false*THIS IS ENDING TWO*74
+false*THIS IS ENDING THREE*75
+false*THIS IS ENDING FOUR*76
+
+false*This is ending 1's continued dialog*78
+false*This is ending 2's continued dialog*78
+false*This is ending 3's continued dialog*78
+false*This is ending 4's continued dialog*78
+
+false*END CREDITS, THANKS FOR PLAYING!!*1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
